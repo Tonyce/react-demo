@@ -1,0 +1,27 @@
+{
+  "name": "relearn",
+  "version": "1.0.0",
+  "description": "react relearn",
+  "main": "server/app.js",
+  "scripts": {
+    "test": "",
+    "start": "node server/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tonyce/react-demo.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "ttang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tonyce/react-demo/issues"
+  },
+  "homepage": "https://github.com/Tonyce/react-demo#readme",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.3"
+  }
+}

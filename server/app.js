@@ -21,6 +21,20 @@ server.use(bodyParser.json()); // for parsing application/json
 server.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 // server.use(multer()); // for parsing multipart/form-data
 
+server.route('/').get(function (req, res) {
+	fs.readFile("build/index.html", function (err, data) {
+		res.end(data);
+	});
+});
+
+
+server.route('/bundle.js').get(function (req, res) {
+	fs.readFile("build/bundle.js", function (err, data) {
+		res.end(data);
+	});
+});
+
+
 
 server.route('/api/blogs')
 	.get(function(req, res) {
